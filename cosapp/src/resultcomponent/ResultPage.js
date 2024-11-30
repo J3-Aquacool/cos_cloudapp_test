@@ -86,8 +86,7 @@ const ResultsPage = () => {
 
   const handleViewResults = async () => {
     try {
-      const response = await axios.get(
-        `/api/download-pdf?email=${encodeURIComponent(
+      const response = await axios.get(`/api/download-pdf?email=${encodeURIComponent(
           email
         )}`,
         { responseType: "blob" }

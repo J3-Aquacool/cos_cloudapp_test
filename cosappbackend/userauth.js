@@ -1,5 +1,5 @@
 
-require('dotenv').config();
+//require('dotenv').config();
 const mysql = require('mysql2');
 const express = require('express');
 //const mysql = require('mysql');
@@ -11,13 +11,13 @@ const app = express();
 
 const path = require('path');
 
-// Serve static files from the React build folder
-app.use(express.static(path.join(__dirname, '../cosapp/build')));
+// // Serve static files from the React build folder
+// app.use(express.static(path.join(__dirname, '../cosapp/build')));
 
-// Fallback route to serve React's `index.html` for unmatched routes
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../cosapp/build', 'index.html'));
-});
+// // Fallback route to serve React's `index.html` for unmatched routes
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../cosapp/build', 'index.html'));
+// });
 
 app.use(cors({
   origin: '*',  // Allow requests only from the frontend on port 3000
@@ -28,16 +28,16 @@ app.use(bodyParser.json());
 
 // Configure MySQL database connection
 const db = mysql.createConnection({
-  // host: '127.0.0.1',  // Replace with your MySQL host
-  // user: 'root',  // Replace with your MySQL username
-  // password: 'admin',  // Replace with your MySQL password
-  // database: 'cosappdb' , // Replace with your MySQL database name
-  // port: 3306
-host: process.env.DB_HOST || '127.0.0.1',  // Replace with your MySQL host
-  user: process.env.DB_USER || 'root',      // Replace with your MySQL username
-  password: process.env.DB_PASS || 'admin1234', // Replace with your MySQL password
-  database: process.env.DB_NAME || 'cosappdb',
-  port: process.env.DB_PORT || 3306         // Default MySQL port
+  host: '127.0.0.1',  // Replace with your MySQL host
+  user: 'root',  // Replace with your MySQL username
+  password: 'admin',  // Replace with your MySQL password
+  database: 'cosappdb' , // Replace with your MySQL database name
+  port: 3305
+// host: process.env.DB_HOST || '127.0.0.1',  // Replace with your MySQL host
+//   user: process.env.DB_USER || 'root',      // Replace with your MySQL username
+//   password: process.env.DB_PASS || 'admin1234', // Replace with your MySQL password
+//   database: process.env.DB_NAME || 'cosappdb',
+//   port: process.env.DB_PORT || 3306         // Default MySQL port
 
 });
 
