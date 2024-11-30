@@ -35,9 +35,9 @@ const db = mysql.createConnection({
   // port: 3306
 host: process.env.DB_HOST || '127.0.0.1',  // Replace with your MySQL host
   user: process.env.DB_USER || 'root',      // Replace with your MySQL username
-  password: process.env.DB_PASS || 'admin', // Replace with your MySQL password
+  password: process.env.DB_PASS || 'admin1234', // Replace with your MySQL password
   database: process.env.DB_NAME || 'cosappdb',
-  port: process.env.DB_PORT || 3305         // Default MySQL port
+  port: process.env.DB_PORT || 3306         // Default MySQL port
 
 });
 
