@@ -1,0 +1,184 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent outer scrolling */
+}
+
+.survey-form-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 800px;
+  margin: auto;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+h4 {
+ 
+  margin: 0; /* Remove default margin */
+  text-align: center;
+  font-size: 1.5em; /* Increase font size */
+  font-family: 'Poppins', sans-serif; /* Use a clean, modern font */
+  font-weight: 700; /* Make it bold */
+  color: #FF4500; /* Vibrant orange-red for a striking appeal */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Add a soft shadow */
+  letter-spacing: 1.5px; /* Slightly increase spacing for elegance */
+  padding: 10px 0; /* Add vertical spacing */
+  background: linear-gradient(90deg, #FFA500, #FF6347); /* Subtle gradient background */
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Make the text gradient-colored */
+}
+
+.header {
+  text-align: center;
+  padding-bottom: 2px;
+  flex-shrink: 0;
+}
+
+.welcome-message {
+  font-size: 1em;
+  position: absolute; /* Position the element relative to the container */
+  top: 10px;          /* Adjust the distance from the top */
+  left: 10px;         /* Adjust the distance from the left */
+  margin: 0;          /* Remove default margin */
+  font-weight: bold;  /* Optional: Make it bold for emphasis */
+}
+
+.questionnaire {
+
+  width: 100%; 
+  max-width: 1200px;
+  background-color: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 2px solid #152177; 
+  align-items: center; /* Center children horizontally in the questionnaire */
+   /* Distribute space between content */
+  padding-bottom: 10px; 
+  justify-content: center;
+
+  
+}
+
+.survey-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-size: 1.0em;
+  border: 2px solid #e69a15; 
+  margin: 0; 
+  
+}
+
+.survey-table th
+{
+
+  text-align: center;
+}
+.survey-table td {
+  border: 1px solid rgba(25, 25, 213, 0.968);
+  padding: 6px;
+  text-align: left;
+}
+
+.survey-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #0d3968;
+  color: #FFA500;
+  font-weight: bold;
+  z-index: 1;
+}
+
+/* Style for the dropdown */
+.survey-table td select {
+  width: 85px;
+  padding: 6px;
+  font-size: 0.8em;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  text-align-last: center; /* Centers the text for dropdown options */
+  appearance: none; /* Removes the default dropdown arrow */
+}
+
+/* Add custom styles for dropdown arrow */
+.survey-table td select::-ms-expand {
+  display: none;
+}
+
+.submit-button {
+  padding: 6px 12px;
+  
+  font-size: 0.8em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: sticky;
+  bottom: 0;
+  align-self: center;
+  width: fit-content;
+ 
+  margin: 20px auto 0;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+
+
+.submit-button-container {
+   display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content */
+
+
+}
+
+.error-message {
+  color: rgb(255, 153, 0);
+  text-align: center;
+  margin-top: 1px;
+  font-size: 0.9em;
+  font-weight: bold;
+  visibility: visible; /* Ensure it's not hidden */
+}
+
+.timer {
+  font-size: 1em;
+  color: #d9534f; /* Red color for urgency */
+
+  
+  font-weight: bold;
+  position: absolute; /* Absolute positioning relative to the page */
+  bottom: 10px; /* Adjusts distance from the bottom */
+  right: 10px; /* Adjusts distance from the right */
+}
+
+
+
+
+
+.timer span {
+  padding: 2px 2px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.timer .minutes {
+  color: #4a90e2; /* Professional soft blue for minutes */
+  background-color: #f0f8ff; /* Light background */
+  border: 1px solid #d3e0f0; /* Border matches the shade */
+}
+
+.timer .secs {
+  color: #6cf7b2; /* Soft coral for seconds */
+  background-color: #fff0f0; /* Light coral background */
+  border: 1px solid #f0d6d6; /* Border matches the shade */
+}

@@ -1,0 +1,92 @@
+/* Professional Styling for SummaryPage */
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.summary-page {
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Professional Styling for Page Title */
+h2 {
+  font-size: 0.9em; /* Smaller, professional size */
+  font-family: 'Arial', sans-serif; /* Clean, professional font */
+  color: #4A4A6A; /* Dark gray for a professional look */
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600; /* Semi-bold for subtle emphasis */
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 1px 1px;
+  border: 1px solid #e1e4e8;
+  text-align: center;
+}
+
+/* Narrower width for rows 1 to 6 */
+.summary-table tbody tr:nth-child(-n+6) td {
+  min-width: 50px; /* Set minimum width for cells in rows 1 to 6 */
+  max-width: 60px;
+}
+
+/* Header styling */
+.summary-table th {
+  background-color: #2e3b4e;
+  color: #f0ad4e;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+/* Regular cell styling */
+.summary-table td {
+  font-size: 0.85em;
+  color: #4a4a4a;
+}
+
+.summary-table tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+/* Styling for Additional Marks and Grand Total rows */
+.summary-table .total-row,
+.summary-table .additional-marks-row,
+.summary-table .grand-total-row {
+  background-color: #f1f8e9;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.summary-table .additional-marks-row td,
+.summary-table .grand-total-row td {
+  min-width: 120px; /* Set minimum width for specific total rows */
+}
+
+.summary-table .additional-marks-row {
+  color: #5cb85c;
+}
+
+.summary-table .grand-total-row {
+  color: #d9534f;
+}

@@ -1,0 +1,133 @@
+/* Base styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .top-left-content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+
+  .results-page {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /*h1 {
+    font-size: 1.6em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }*/
+
+  h1 {
+    font-size: 2em; /* Larger font size for prominence */
+    text-align: center; /* Center-align the text */
+    color: #2F4F4F; /* Dark Slate Gray for a professional look */
+    font-family: 'Georgia', serif; /* A sophisticated serif font */
+    text-transform: uppercase; /* Optional: Makes the text all caps */
+    letter-spacing: 2px; /* Adds spacing between letters for elegance */
+    margin-bottom: 10px; /* Adds space below the heading */
+    border-bottom: 2px solid #FFA500; /* Optional: Add an underline with an appealing color */
+    padding-bottom: 5px; /* Adds spacing between the text and underline */
+  }
+  
+  /* Table styling */
+  table {
+    border: 2px solid #FFD700;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f7f5); 
+    margin: 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 0.8em;
+  }
+  
+  th {
+    position: sticky; /* Makes the header fixed while scrolling */
+  top: 0;
+  z-index: 2;
+    background-color: #2F4F4F;
+    color: #FFA500;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  td {
+    text-align: left;
+  }
+  
+  input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+    
+      display: block;
+      margin: 0 auto; /* Centers the checkbox horizontally */
+    
+  }
+  
+
+  /* Button styling */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px; /* Reduced padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 0.8em; /* Reduced font size */
+    width: fit-content;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .results-page {
+      padding: 15px;
+    }
+    
+    h1 {
+      font-size: 1.4em;
+    }
+  
+    th, td {
+      font-size: 0.8em;
+      padding: 6px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2em;
+    }
+  
+    table, th, td {
+      font-size: 0.75em;
+    }
+  
+    th, td {
+      padding: 5px;
+    }
+  }
+  
