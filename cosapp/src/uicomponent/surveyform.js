@@ -79,8 +79,8 @@ const SurveyForm = () => {
 
     return (
       <span>
-        <span style={{ color: "#3498db" }}>{minutes.toString().padStart(2, "0")}</span>
-        <span style={{ color: "#6cf7b2" }}>:{secs.toString().padStart(2, "0")}</span>
+        <span style={{ color: "orange" }}>{minutes.toString().padStart(2, "0")}</span>
+        <span style={{ color: "orange" }}>:{secs.toString().padStart(2, "0")}</span>
       </span>
     );
   };

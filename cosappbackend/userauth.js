@@ -30,9 +30,9 @@ app.use(bodyParser.json());
 const db = mysql.createConnection({
   host: '127.0.0.1',  // Replace with your MySQL host
   user: 'root',  // Replace with your MySQL username
-  password: 'admin1234',  // Replace with your MySQL password
+  password: 'admin',  // Replace with your MySQL password
   database: 'cosappdb' , // Replace with your MySQL database name
-  port: 3306
+  port: 3305
 // host: process.env.DB_HOST || '127.0.0.1',  // Replace with your MySQL host
 //   user: process.env.DB_USER || 'root',      // Replace with your MySQL username
 //   password: process.env.DB_PASS || 'admin1234', // Replace with your MySQL password

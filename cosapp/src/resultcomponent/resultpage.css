@@ -43,27 +43,29 @@ body, html {
   
   /* Table styling */
   table {
-    border: 2px solid #FFD700;
+    border: 2px solid white;
     width: 100%;
     border-collapse: collapse;
     font-size: 0.9em;
-    background: linear-gradient(to bottom, #f0f8ff, #e6f7f5); 
+    background: #A7DCDD;
     margin: 0;
   }
   
   th, td {
-    border: 1px solid #ddd;
+    border: 2px solid #CCC1DA;
     padding: 8px;
     text-align: left;
     font-size: 0.8em;
+    font-weight: bold;
   }
   
   th {
     position: sticky; /* Makes the header fixed while scrolling */
   top: 0;
   z-index: 2;
-    background-color: #2F4F4F;
-    color: #FFA500;
+    background-color:#604A7B
+    ;
+    color: white;
     font-weight: bold;
     text-align: center;
     white-space: nowrap;

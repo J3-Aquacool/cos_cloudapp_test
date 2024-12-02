@@ -195,7 +195,7 @@ const ResultsPage = () => {
       </div>
 
       {submissionMessage && (
-        <p style={{ marginTop: "20px", color: "green" }}>{submissionMessage}</p>
+        <p style={{ marginTop: "5px", color: "purple" }}>{submissionMessage}</p>
       )}
     </div>
   );

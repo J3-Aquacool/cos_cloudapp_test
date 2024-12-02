@@ -179,6 +179,7 @@ const LoginPage = () => {
   return (
     <div className="login-page">
       <div className="form-container">
+      <img src="./unextlogo.png" alt="Logo" className="logo" />
         <h2>Login</h2>
         {error && <p className="error">{error}</p>}
         <form onSubmit={handleLogin}>

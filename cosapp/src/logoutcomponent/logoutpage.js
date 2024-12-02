@@ -15,7 +15,7 @@ const LogoutPage = () => {
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h2>Welcome to the logout page!</h2>
+      <h2>Thank you for your participation in the Survey!</h2>
       <button
         onClick={handleLogout}
         style={{
