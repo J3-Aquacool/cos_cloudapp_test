@@ -33,7 +33,7 @@ app.post("/api/survey-responses", (req, res) => {
   db.query(query, [values], (err, result) => {
     if (err) {
       console.error("Error inserting responses:", err);
-      return res.status(500).json({ message: "Failed to store responses" });
+      return res.status(500).json({ message   : "Failed to store responses" });
     }
 
     res.status(200).json({ message: "Survey responses stored successfully" });
