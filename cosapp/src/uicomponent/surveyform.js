@@ -29,6 +29,20 @@ const SurveyForm = () => {
         setError(true);
         return;
       }
+      // new code added on dec-03-2024
+
+       // Count responses with ratings between 4 and 6
+    const validResponsesCount = responses.filter(
+      (rating) => rating >= 4 && rating <= 6
+    ).length;
+
+    if (validResponsesCount < 6) {
+      alert(
+        "You must rate at least 6 questions with a score between 4 and 6 to proceed."
+      );
+      return;
+    }
+
 
       setError(false);
 
@@ -95,9 +109,28 @@ const SurveyForm = () => {
   );
 
   return (
+
+
+    <div className="survey-form-wrapper">
+    <div className="top-left-instructions">
+      <h4>HOW TO RATE THE ITEMS</h4>
+      <p>
+        For each of the 40 items, rate how true each item is for you by assigning a number from 1 to 6.  
+        The higher the number, the more that item is true for you.  
+      </p>
+      <ul>
+        <li><strong>1</strong>: If the statement is never true for me</li>
+        <li><strong>2</strong> or <strong>3</strong>: If the statement is occasionally true for you</li>
+        <li><strong>4</strong> or <strong>5</strong>: If the statement is often true for you</li>
+        <li><strong>6</strong>: If the statement is always true for you</li>
+      </ul>
+    </div>
+
     <div className="survey-form-page">
-      <header className="header">
+     <header className="header">
         <h4>Career Inventory Survey</h4>
+
+        
         <div className="welcome-message">Welcome, {username || "Guest"}!</div>
       </header>
 
@@ -107,7 +140,7 @@ const SurveyForm = () => {
             <table className="survey-table">
               <thead>
                 <tr>
-                  <th>Question #</th>
+                  <th>Q.#</th>
                   <th>Question</th>
                   <th>Rating</th>
                 </tr>
@@ -149,6 +182,7 @@ const SurveyForm = () => {
         )}
       </form>
       <div className="timer">Time Remaining: {formatTime(timeLeft)}</div>
+    </div>
     </div>
   );
 };

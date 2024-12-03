@@ -3,17 +3,46 @@ html, body {
   margin: 0;
   overflow: hidden; /* Prevent outer scrolling */
 }
+.survey-form-wrapper {
+  position: relative;
+  padding: 20px;
+}
+
+.top-left-instructions {
+  position: absolute;
+  top: 70px;
+  left: 5px;
+  width: 150px; /* Reduced width */
+  padding: 10px;
+  background-color: #f9f9f9; /* Light background */
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 0.85em; /* Slightly smaller font */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.top-left-instructions h4 {
+  margin: 0 0 5px;
+  font-size: 1.1em;
+}
+
+.top-left-instructions p,
+.top-left-instructions ul {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.top-left-instructions ul {
+  padding-left: 10px;
+}
 
 .survey-form-page {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  max-width: 800px;
-  margin: auto;
-  padding: 5px;
-  box-sizing: border-box;
-  justify-content: flex-start;
+  margin-left: 180px; /* Adjusted to leave space for the instructional text */
+  position: relative;
 }
+
+
 h4 {
  
   margin: 0; /* Remove default margin */
@@ -40,16 +69,16 @@ h4 {
   font-size: 1em;
   position: absolute; /* Position the element relative to the container */
   top: 10px;          /* Adjust the distance from the top */
-  left: 10px;         /* Adjust the distance from the left */
+  right: 10px;         /* Adjust the distance from the left */
   margin: 0;          /* Remove default margin */
   font-weight: bold;  /* Optional: Make it bold for emphasis */
 }
 
 .questionnaire {
 
-  width: 100%; 
+  width: 90%; 
   max-width: 1200px;
-  background-color: #A7DCDD;
+  background-color: #D4F0E1;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -87,8 +116,8 @@ h4 {
 .survey-table thead th {
   position: sticky;
   top: 0;
-  background-color: #0d3968;
-  color: #FFA500;
+  background-color: Light Peach ;
+  color: whitesmoke;
   font-weight: bold;
   z-index: 1;
 }

@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color:#D4F0E1  !important; /* Light blue background with !important */
+  background-color:whitesmoke  !important; /* Light blue background with !important */
   display: flex;
   justify-content: center;
   align-items: center;

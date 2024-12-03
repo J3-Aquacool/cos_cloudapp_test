@@ -94,7 +94,16 @@ const ResultsPage = () => {
 
       const pdfBlob = response.data;
       const pdfUrl = URL.createObjectURL(pdfBlob);
-      window.open(pdfUrl, "_blank");
+
+      //lets update the code here to download
+
+      const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "survey-results.pdf"; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+      //window.open(pdfUrl, "_blank");
        // Navigate to LogoutPage
     navigate("/logout", { replace: true });
     } catch (error) {
